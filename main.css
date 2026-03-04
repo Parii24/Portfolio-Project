@@ -1,0 +1,157 @@
+*  {
+    box-sizing: border-box;
+}
+.main-header {
+    background-color: rgb(141, 41, 141);
+    height: 64px;
+    border-radius: 4px;
+    padding-top: 16px;
+    padding-left: 10px;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+}
+.main-header-title {
+    font-size: 24px;
+    color: white;
+}
+
+.hero-element img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    border: 3px solid white;
+    
+}
+.information, .about
+{
+    text-align: center;
+}
+
+.projects {
+    text-align: center;
+    margin-top: 40px;
+}
+.projects .project-items {
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    width: 180px;
+    margin: 0 auto 16px;
+    padding: 16px;
+     transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.projects .project-items h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #333;
+}
+
+.projects .project-items:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
+}
+.projects .project-items a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.projects .project-items a:hover {
+    background-color: #0056b3;
+}
+footer {
+    text-align: center;
+}
+footer a {
+    margin-top: 30px;
+    margin-right: 16px;
+}
+footer a:last-child {
+    margin-right: 0;
+}
+@media (max-width: 600px) {
+    .main-header {
+        height: 50px;
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+
+    .main-header-title {
+        font-size: 20px;
+    }
+
+    .hero-element img {
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+    }
+
+    .information h2, .about h2 {
+        font-size: 18px;
+    }
+
+    .information p, .about p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .skills i {
+        font-size: 20px;
+    }
+
+    .projects .project-items {
+        width: 90%;
+        padding: 12px;
+    }
+
+    .projects .project-items h3 {
+        font-size: 14px;
+    }
+
+    .projects .project-items a {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    footer a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+    .hero-element img {
+        width: 160px;
+        height: 160px;
+        border-radius: 80px;
+    }
+
+    .main-header-title {
+        font-size: 22px;
+    }
+
+    .projects .project-items {
+        width: 45%;
+        margin: 10px auto;
+        padding: 14px;
+    }
+
+    .projects .project-items h3 {
+        font-size: 15px;
+    }
+
+    .projects .project-items a {
+        padding: 6px 12px;
+        font-size: 15px;
+    }
+}
